@@ -20,13 +20,13 @@ public class WalkWaypoints : MonoBehaviour
     // =============================================================================
     
     // Velocidade de movemento en unidades por segundo
-    public float speed = 4.0f;
+    public float speed = 6.0f;
     
     // Distancia mínima para considerar alcanzado un waypoint
     public float accuracy = 0.5f;
     
     // Velocidade de rotación cara á nova dirección
-    public float rotationSpeed = 4f;
+    public float rotationSpeed = 8f;
     
     // Índice do waypoint actual no array (0 = primeiro waypoint)
     public int currentNode = 0;

@@ -140,8 +140,8 @@ public class GridWaypoints : MonoBehaviour
         // Definir as 4 direccións cardinais como desplazamentos (row, col)
         // Non inclúe direccións diagonais para simplificar a navegación
         int[,] directions = {
-            { -1, 0 },  // Arriba (diminúe row)
-            { 1, 0 },   // Abaixo (aumenta row)
+            { 1, 0 },  // Abaixo (aumenta row)
+            { -1, 0 },   // Arriba (diminúe row)
             { 0, -1 },  // Esquerda (diminúe col)
             { 0, 1 }    // Dereita (aumenta col)
         };
@@ -243,13 +243,12 @@ public class GridWaypoints : MonoBehaviour
         // Patrón do labirinto: true = camiñable, false = obstáculo
         // Este patrón pode modificarse para crear diferentes labirintos
         bool[,] walkablePattern = {
-            { true,  true,  false, true,  true,  true  },   // Fila 0
-            { true,  false, true,  true,  true,  true  },   // Fila 1
-            { true,  false, true,  true,  true,  true  },   // Fila 2
-            { true,  true,  true,  false, true,  true  },   // Fila 3
-            { true,  true,  true,  true,  false, true  },   // Fila 4
-            { true,  true,  false, true,  false, true  },   // Fila 5
-            { true,  false, false, true,  true,  true  }    // Fila 6
+            { true, true, true, true, false, true },   // Fila 0
+            { true, false, true, true, false, true },   // Fila 1
+            { true, false, true, true, false, true },   // Fila 2
+            { true, false, false, true, false, true },   // Fila 3
+            { true, false, true, true, true, true },   // Fila 4
+            { true, true, true, true, true, true },   // Fila 5
         };
 
         // Crear a estrutura de datos baseada no patrón
@@ -392,8 +391,8 @@ public class GridWaypoints : MonoBehaviour
      */
     void SetupStartAndEndNodes()
     {
-        startNode = grid[0, 0];     // Esquina superior esquerda
-        endNode = grid[6, 5];       // Esquina inferior dereita
+        startNode = grid[0, 0];     // Medio izquierda
+        endNode = grid[5, 3];       // Medio derecha
         
         // Garantir que inicio e destino sexan sempre accesibles
         startNode.Walkable = true;

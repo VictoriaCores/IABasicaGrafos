@@ -90,6 +90,12 @@ public class TanksWaypointsFollow : MonoBehaviour {
         currentWP = 0;
     }
 
+    // Ir al oasis (waypoint 6)
+    public void GotoOasis() {
+        graph.AStar(currentNode, waypoints[6]);
+        currentWP = 0;
+    }
+
     // =============================================================================
     // BUCLE DE MOVEMENTO (LateUpdate)
     // =============================================================================

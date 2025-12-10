@@ -1,18 +1,25 @@
-# Descrición
+# Cambios en IABasicaGrafos
 
-Emprega este arquivo para describir os cambios do teu proxecto.
+## Escena *Simple*
 
-Utiliza o formato en markdown coas marcas básicas que aparcen no seguinte exemplo:
+- Cambié el orden en el que el Agent recorre los Waypoints, y la posición de los mismos.
+- Modifiqué la velocidad de traslación y rotación.
 
-# Título principal
-## Subtítulo
+## Escena *TanksRacing*
 
-Texto normal con **negriña** e *cursiva*.
+- Cambié el orden en el que los tanques recorren las palmeras, y la posición de las mismas.
+- Modifiqué la velocidad de traslación y rotación de cada uno de los tanques.
+- Añadí dos tanques y una palmera nueva.
 
-- Lista 1
-- Lista 2
+## Escena *Labyrinth*
 
-[Ligazón](https://exemplo.com)
+- Cambié el laberinto que tiene que atravesar el Agent, y el punto de destino.
+
+## Escena *TanksWaypoints*
+
+- Creé dos nuevos Waypoints y sus respectivos Links.
+- Añadí un conjunto de palmeras para crear el punto de Oasis.
+- Agregué un botón para poder dirigirse al oasis.
 
 
 ```csharp
